@@ -9,16 +9,20 @@ public class Mmasuma1 {
 			}
 	
 	public static int task4(int x) {
-		
+		System.out.println("task4   :   "+x);
 		return x;
 	}
 	public static String task5(String s) {
-		
+		System.out.println("task5 :   "+s);
 		return s;
 	}
 	
-	public void truefalse() {
-		
+	public  String truefalse(String s) {
+		String s1="marry";
+		String s2="marrien";
+		s1=s2;
+		System.out.println("T or F :  "+s1.equals(s2));
+		return s2;
 			
 	}
 	public static void main(String[] args) {
@@ -26,8 +30,10 @@ public class Mmasuma1 {
 		System.out.println(Mmasuma1.task5("Masuma"));
 		Mmasuma1 Mmasuma=new Mmasuma1();
 		Mmasuma.task();
-		
-
+		Mmasuma.task4(200);
+		Mmasuma1.task5("Prince");
+		Mmasuma.truefalse(null);
+		System.out.println(Mmasuma1.task5("dhaka"));
 		String s3="asdfg";
 		String s4="ASDfG";
 		System.out.println(s3.equals(s4));
