@@ -1,6 +1,6 @@
 package com.Work;
 
-public class Mmasuma {
+public class Mmasuma1 {
 
 	String s="masuma";
 	
@@ -26,8 +26,8 @@ public class Mmasuma {
 	}
 	public static void main(String[] args) {
 		
-		System.out.println(Mmasuma.task5("Masuma"));
-		Mmasuma  Mmasuma=new Mmasuma();
+		System.out.println(Mmasuma1.task5("Masuma"));
+		Mmasuma1 Mmasuma=new Mmasuma1();
 		Mmasuma.task();
 		
 
