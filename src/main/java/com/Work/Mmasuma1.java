@@ -16,12 +16,7 @@ public class Mmasuma1 {
 		
 		return s;
 	}
-	public  void task6(String x, int y) {	
-		
-	}
-public  void task7(String x, int y) {	
-		
-	}
+	
 	public void truefalse() {
 		
 			
