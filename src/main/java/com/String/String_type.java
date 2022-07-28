@@ -17,20 +17,19 @@ public class String_type {
 		*/
 		
 		String s="I am USA citizen";
-		String string=new String("I like Automation");
+		String string=new String("I like Automation");//string pass korsi as constructor 
 		
 		//String comperison
 		
 		String s1="masuma";
 		String s2="rahman";
-		
-		s1=s2;
+		String s3="masumA";
+
 		s1.equals(s2);
+		System.out.println(s1.equals(s2));//f
+		System.out.println(s1.equals(s3));//f
+		System.out.println(s1.equalsIgnoreCase(s3));//t
 		
-		
-		
-		
-		
-	}
+			}
 
 }

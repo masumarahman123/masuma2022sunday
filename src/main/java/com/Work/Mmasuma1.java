@@ -12,11 +12,15 @@ public class Mmasuma1 {
 		System.out.println("task4   :   "+x);
 		return x;
 	}
+	
 	public static String task5(String s) {
 		System.out.println("task5 :   "+s);
 		return s;
 	}
-	
+	public static void task5() {
+		System.out.println("task5...... :   ");
+		
+	}
 	public  String truefalse(String s) {
 		String s1="marry";
 		String s2="marrien";
@@ -29,6 +33,7 @@ public class Mmasuma1 {
 		
 		System.out.println(Mmasuma1.task5("Masuma"));
 		Mmasuma1 Mmasuma=new Mmasuma1();
+		Mmasuma.task5();
 		Mmasuma.task();
 		Mmasuma.task4(200);
 		Mmasuma1.task5("Prince");
