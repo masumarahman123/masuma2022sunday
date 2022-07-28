@@ -3,8 +3,9 @@ package com.String;
 public class String_Trim_and_Split {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		//trim();--remove beganning and ending space
+		String a=" ";
 		
 				String p="  https://www.google.com/  ";
 				System.out.println(p.length());
