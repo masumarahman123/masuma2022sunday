@@ -16,6 +16,7 @@ public class NewClass {
 						
 			System.out.println(i);//0 to 9 print
 		}
+		//###########
 		//1st con fullfill than action
 		
 		int i=5;
