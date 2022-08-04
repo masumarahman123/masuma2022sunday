@@ -14,7 +14,7 @@ public class GenericArray {
 		ArrayList<Boolean>al3=new ArrayList<Boolean>();	
 		ArrayList<E>al4=new ArrayList<E>();//if u dont know what kind of data			
 			
-		
+		///
 		//***************************************
 			//class er kono object jodi rakhte chai	
 		ArrayList<Object>al5=new ArrayList<Object>();	
