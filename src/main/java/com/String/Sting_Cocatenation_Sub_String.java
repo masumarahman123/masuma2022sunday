@@ -31,6 +31,21 @@ public class Sting_Cocatenation_Sub_String {
 	System.out.println(ll.substring(1, 8));
 	System.out.println(ll.substring(4, 20));
 	
+	
+	//
+	String xx="123";
+	String yy="123";
+	
+	System.out.println(".................."+xx.concat(yy));
+	System.out.println("...##"+xx==yy);
+	System.out.println(".........###"+xx.equals(yy));
+	String zz=xx.concat(yy);
+	System.out.println("----"+zz);
+	
+	
+	
+	
+	
 	}
 
 }
