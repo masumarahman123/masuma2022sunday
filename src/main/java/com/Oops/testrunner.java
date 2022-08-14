@@ -7,14 +7,14 @@ public class testrunner {
 		DBB dbb=new DBB();//static polymorphism/
 		//System.out.println(dbb.loan1();//can not print ,complition error
 		
-		
-		
+		dbb.carloan();
+	
 		
 		
 		BB bb=new DBB();//dynamic polymorphism/runtime/Top casting 
 		//System.out.println(bb.loan1());//compilition error
-		
-		
+		bb.loan();
+		System.out.println();
 		FDR fdr=new DBB();
 		//System.out.println(fdr.loan1());//compilition error
 		

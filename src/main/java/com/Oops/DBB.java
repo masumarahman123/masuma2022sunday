@@ -1,9 +1,12 @@
 package com.Oops;
-
+							//multiple inheritance
 public class DBB implements BB,FDR{
 
+	//Is_a_relationship(one child ,one interface)
 	
-	
+	public void childmethod() {//child class method so not override
+		
+	}
 	
 	
 	public static void main(String[] args) {

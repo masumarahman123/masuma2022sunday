@@ -19,6 +19,6 @@ public interface BB {
 	
 	public void Can_not_cell_doller();
 	
-	
+	//we can not create object of interface
 	
 }
