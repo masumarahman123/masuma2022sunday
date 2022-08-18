@@ -15,6 +15,8 @@ import org.testng.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Selenium_one {
+	
+	//
 //...//input[@value='radio2']..//radio button index follow kortesa
 	////input[@id='autocomplete']...hello
 	////select[@id='dropdown-class-example']..select
