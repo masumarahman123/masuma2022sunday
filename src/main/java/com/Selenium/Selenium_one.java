@@ -26,7 +26,7 @@ public class Selenium_one {
 		
 		WebDriverManager.chromedriver().setup();		
 		WebDriver driver=new ChromeDriver();
-		//version
+		
 		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().window().maximize();
