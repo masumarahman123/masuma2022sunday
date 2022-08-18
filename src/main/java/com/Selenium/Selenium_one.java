@@ -15,7 +15,7 @@ import org.testng.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Selenium_one {
-	// masuma
+	
 	
 //...//input[@value='radio2']..//radio button index follow kortesa
 	////input[@id='autocomplete']...hello
@@ -32,13 +32,17 @@ public class Selenium_one {
 		driver.manage().window().maximize();
 		
 		//3.141.59 version er wait
-		driver.manage().timeouts().pageLoadTimeout(6, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(6000l, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(3000l, TimeUnit.MILLISECONDS);//Dynamic Wait/GlobalWait
 //driver.manage().timeouts().pageLoadTimeout(Duration.ofMillis(2000l));
 //driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000l));
-		String w= driver.getTitle();
-		System.out.println(w);		
+		
+		String actual= driver.getTitle();
+		System.out.println(actual);
+		String expected="Practice Page";
 		Thread.sleep(3000);//static Wait
+		Assert.assertEquals(actual, expected);
+		
 		
 		//click radio button
 		//driver.findElement(By.cssSelector("input[value='radio2']")).click();/css..1.no //  2. no @
@@ -46,7 +50,11 @@ public class Selenium_one {
 		Thread.sleep(2000);
 		boolean b=driver.findElement(By.name("radioButton")).isSelected(); 
 		Assert.assertTrue(b);
-		
+		/*//Assert.assertFalse(b); hard assertion negitive
+		while(b) {
+			System.out.println("radio botton has been click");
+			break;}
+			*/
 		driver.findElement(By.xpath("//input[@id='autocomplete']")).clear();
 		driver.findElement(By.xpath("//input[@id='autocomplete']")).sendKeys("hello");
 		//or..driver.findElement(By.xpath("//input[@id='autocomplete']")).sendKeys(Keys.ENTER);
@@ -79,7 +87,7 @@ public class Selenium_one {
 		Actions action=new Actions(driver);
 		action.moveToElement(x).perform();
 		
-		WebElement t=driver.findElement(By.xpath("//*[contains(text(),'Reload')]"));
+		WebElement t=driver.findElement(By.xpath("//a[contains(text(),'Reload')]"));
 		
 		Thread.sleep(3000);
 		action.moveToElement(t).click().perform();
