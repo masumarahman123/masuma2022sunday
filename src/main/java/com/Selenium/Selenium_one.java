@@ -55,6 +55,8 @@ public class Selenium_one {
 			System.out.println("radio botton has been click");
 			break;}
 			*/
+		
+		//Suggession Class Example
 		driver.findElement(By.xpath("//input[@id='autocomplete']")).clear();
 		driver.findElement(By.xpath("//input[@id='autocomplete']")).sendKeys("hello");
 		//or..driver.findElement(By.xpath("//input[@id='autocomplete']")).sendKeys(Keys.ENTER);
@@ -62,32 +64,55 @@ public class Selenium_one {
 		driver.findElement(By.xpath("//input[@id='autocomplete']")).clear();
 		Thread.sleep(2000);
 		
-		//Assert.assertTrue(b);
-		//3.141.59
 		
 		
-		WebElement r=driver.findElement(By.xpath("//select[@id='dropdown-class-example']"));
 		
-		Select select=new Select(r);
+		//dropdown select 
+		WebElement r=driver.findElement(By.xpath("//select[@id='dropdown-class-example']"));//select er path		
+		Select select=new Select(r);		
+		select.selectByVisibleText("Option1");//select korlam option one
+		//....
 		
-		select.selectByVisibleText("Option1");
-		
+		//Checkbox Example
+		System.out.println(driver.findElement(By.xpath("//input[@id='checkBoxOption1']")).isSelected());//false
 		driver.findElement(By.xpath("//input[@id='checkBoxOption1']")).click();
-		
+		System.out.println(driver.findElement(By.xpath("//input[@id='checkBoxOption1']")).isSelected());//true
+	boolean cheekbox=driver.findElement(By.xpath("//input[@id='checkBoxOption1']")).isSelected();
+		Assert.assertTrue(cheekbox);
 		Thread.sleep(3000);
 		
+		//alert accept
 		driver.findElement(By.xpath("//input[@id='alertbtn']")).click();
 		Thread.sleep(3000);
+		String message=driver.switchTo().alert().getText();
+		//driver.switchTo().alert().accept();
+		if(message.equalsIgnoreCase("Hello , share this practice page and share your knowledge")) {
+			driver.switchTo().alert().accept();	
+		}
+		else {System.out.println("Thats not acurrect alert");}
+		System.out.println("get text..."+ message);
+		//boolean text=driver.switchTo().alert().accept();
+		//Assert
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@name='enter-name']")).clear();
+		driver.findElement(By.xpath("//input[@name='enter-name']")).sendKeys("masuma");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@id='confirmbtn']")).click();
 		driver.switchTo().alert().accept();
 		
-		WebElement x=driver.findElement(By.xpath("//*[text()='Mouse Hover']"));
+		//driver.findElement(By.xpath("//input[@class='inputs']")).clear();
+		
+		
+		
+		
+		WebElement jx=driver.findElement(By.xpath("//button[text()='Mouse Hover']"));
 		JavascriptExecutor js=(JavascriptExecutor)driver;		
-		js.executeScript("arguments[0].scrollIntoView;", x);
+		js.executeScript("arguments[0].scrollIntoView();", jx);
 		
 		Actions action=new Actions(driver);
-		action.moveToElement(x).perform();
+		action.moveToElement(jx).perform();
 		
-		WebElement t=driver.findElement(By.xpath("//a[contains(text(),'Reload')]"));
+		WebElement t=driver.findElement(By.xpath("//a[text()='Reload']"));
 		
 		Thread.sleep(3000);
 		action.moveToElement(t).click().perform();
