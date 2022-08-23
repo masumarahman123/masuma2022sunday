@@ -26,8 +26,8 @@ public class TestBanna {
 				String actualresult=driver.findElement(By.xpath("//h1[text()='Signing up is easy!']")).getText();
 					System.out.print(actualresult);	
 						String expected="Signing up is easy!";
-						Assert.assertEquals(actualresult, expected);
-				
+						
+				Assert.assertEquals(actualresult, expected);
 		/*
 		 //Register...
 		driver.findElement(By.xpath("//a[text()='Register']")).click();

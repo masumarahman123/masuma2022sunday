@@ -12,7 +12,7 @@ import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Selinium_2nd_class {
+public class Selinium_2nd_windowhandles {
 
 	public static void main(String[] args) throws InterruptedException {
 
