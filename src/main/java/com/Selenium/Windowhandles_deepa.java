@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Windowhandles {
+public class Windowhandles_deepa {
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -32,7 +32,7 @@ public class Windowhandles {
 	     
 	     driver.switchTo().window(childwin);
 	     System.out.println("childwindow..."+driver.getTitle());
-	     
+	     driver.close();
 	     
 	     
 		

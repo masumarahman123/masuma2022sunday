@@ -21,8 +21,9 @@ public class Sel_Q_Ans {
 		 * 
 		 * 
 		 * 
-		 * close()
-		 * Quit()
+		 * close().. Close the current window, 
+		 * Quit()..   * Quits this driver, closing every associated window opened by selenium.
+
 		 * Session Id
 		 * print window print koro
 		 *  Set <String>window=driver.getWindowHandles(); //collection

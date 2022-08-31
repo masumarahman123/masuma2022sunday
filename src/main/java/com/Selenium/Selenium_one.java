@@ -14,19 +14,13 @@ import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Selenium_one {
-	
-	
-//...//input[@value='radio2']..//radio button index follow kortesa
-	////input[@id='autocomplete']...hello
-	////select[@id='dropdown-class-example']..select
+public class Selenium_one {	
+
 	public static void main(String[] args) throws InterruptedException {
 		
 		
-		
 		WebDriverManager.chromedriver().setup();		
-		WebDriver driver=new ChromeDriver();
-		
+		WebDriver driver=new ChromeDriver();	
 		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().window().maximize();
